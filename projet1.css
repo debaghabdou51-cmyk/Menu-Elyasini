@@ -1,13 +1,20 @@
-#l1{
-    display: none;
-    
-}
-      body {
+/* =======================================================
+   1. GLOBAL STYLES & SHIMMER BACKGROUND
+   ======================================================= */
+body {
     margin: 0;
-    height: 100vh;
-    background: linear-gradient(270deg, #660000, #993333,#cc9900);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    font-family: 'Segoe UI', Roboto, sans-serif;
+    color: #ffffff;
+    
+    /* Smooth multi-color animated background */
+    background: linear-gradient(270deg, #4a0010, #800020, #cc9900);
     background-size: 600% 600%;
-    animation: shimmer 8s ease infinite;
+    animation: shimmer 12s ease infinite;
 }
 
 @keyframes shimmer {
@@ -15,35 +22,128 @@
     50% { background-position: 100% 50%; }
     100% { background-position: 0% 50%; }
 }
-#la{
-    font-size: large;
-    
-}
-#h1{
-    /* 1. The Shiny Deep Red Background */
-body {
-    margin: 0;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    /* A rich burgundy-to-red gradient that creates depth */
-    background: radial-gradient(circle, #800020 0%, #4a0010 100%);
+
+/* Welcome Heading */
+#h1 {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 10px;
     color: #ffffff;
-    font-family: 'Segoe UI', Roboto, sans-serif;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
+
+/* Language Selection Container Area */
+#div {
+    background: rgba(0, 0, 0, 0.4);
+    padding: 20px 30px;
+    border-radius: 12px;
+    text-align: center;
+    backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    margin-bottom: 30px;
 }
-#input{
-cursor: pointer;
-user-select: none;
-color: #fcf6ba;
+
+#selection {
+    padding: 6px 12px;
+    font-size: 1rem;
+    border-radius: 6px;
+    border: none;
+    background-color: #ffffff;
+    color: #333333;
+    font-weight: bold;
 }
-.output{
+
+#submit {
+    background-color: #fcf6ba;
+    color: #4a0010;
+    font-weight: bold;
+    border: none;
+    padding: 10px 25px;
+    font-size: 1.1rem;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: transform 0.2s, background-color 0.2s;
+}
+
+#submit:hover {
+    background-color: #ffffff;
+    transform: scale(1.05);
+}
+
+/* =======================================================
+   2. LANGUAGE WRAPPERS & VISIBILITY CONTROL
+   ======================================================= */
+/* Hide all language sections by default until JavaScript activates them */
+.menu-lang-section {
     display: none;
-    color: #660000;
+    width: 100%;
+    max-width: 600px;
+    background: rgba(255, 255, 255, 0.95);
+    color: #333333;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    margin-bottom: 20px;
+    animation: fadeIn 0.5s ease forward;
 }
+
+/* Main inner store names */
+.menu-lang-section h1 {
+    color: #800020;
+    text-align: center;
+    margin-top: 0;
+    border-bottom: 2px dashed #cc9900;
+    padding-bottom: 10px;
+}
+
+/* Category Headings (e.g., POULO, TANJIA, TAGINE) */
+.menu-lang-section h3 {
+    background: #800020;
+    color: #fcf6ba;
+    padding: 8px 15px;
+    border-radius: 6px;
+    margin-top: 25px;
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+/* =======================================================
+   3. ITEM LISTS & MIXED ARABIC TEXT SUPPORT
+   ======================================================= */
+.category-list {
+    list-style-type: none;
+    padding-left: 5px;
+    margin-bottom: 20px;
+}
+
+/* Dish items layout styling */
+.output {
+    font-size: 1.05rem;
+    padding: 8px 5px;
+    color: #333333;
+    border-bottom: 1px solid #eeeeee;
+    
+    /* 🚀 Solves the Mixed Arabic & English direction issue 100% */
+    unicode-bidi: plaintext; 
+    text-align: start;
+}
+
+/* Zebra stripe colors on items to make it easily readable */
+.output:nth-child(even) {
+    background-color: rgba(0, 0, 0, 0.02);
+}
+
+/* =======================================================
+   4. ANIMATIONS
+   ======================================================= */
 @keyframes fadeIn {
-    from {opacity: 0;transform: translate(-5px);}
-    to {opacity: 1;transform: translate(0);}
+    from {
+        opacity: 0;
+        transform: translateY(15px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }

@@ -1,315 +1,398 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
     <title>Menu</title>
     <link rel="stylesheet" href="projet1.css">
 </head>
 <body id="body">
-<h1 id="h1">Welcome</h1>
-<div id="div">
-<label id="h1">Pls select your language : 
-  <select id="selection">
-  <option value="English" id="English">English</option>
-  <option value="Frensh" id="Frensh">Frensh</option>
-  <option value="Arabic" id="Arabic">Arabic</option>
-  <option value="Spanish" id="Spanish">Spanish</option>
-</select><br><br>
-<button id="submit">submit</button>
-</div>
-<div id="l1">
-<h1>abdo</h1>
 
-<ul id="input"> POULO (Traditional Dishes)
-<li class="output">​Lamb head : 160 dh</li>
-<li class="output">​½ Lamb head : 80 dh</li>
-<li class="output">​¼ Lamb head : 40 dh</li>
-<li class="output">​Mixed Poulo : 35 dh</li>
-<li class="output">​Special Poulo : 70 dh</li>
-<li class="output">​Tongue : 30 dh</li>
-<li class="output">Udder (Cow udder) : 25 dh</li>
-<li class="output">​Brains : 40 dh</li>
-<li class="output">​Steamed/Smoked meat : 35 dh</li>
-<li class="output">​Trotters platter (Friture) : 60 dh</li>
-<li class="output">​Tripes platter : 35 dh</li>
-</ul>
-<ul id="input">​TANJIA
-  <li id="output">​Tanjia platter : 35 dh</li>
-  <li id="output">​Tanjia ¼ kg : 50 dh</li>
-  <li id="output">​Tanjia ½ kg : 100 dh </li>
-  <li id="output">​Tanjia 1kg : 200 dh</li>
-</ul>TAGINE
-<ul id="input">
-  <li id="output">​Chicken with fries : 50 dh</li>
-  <li id="output">​Vegetable tagine : 50 dh</li>
-  <li id="output">​Meat / Chicken / Kefta tagine : 60 dh </li>
-  <li id="output">​Meat with prunes & almonds : 70 dh</li>
-</ul>
-<ul id="input">BARBECUE
-  <li id="output">​Barbecue platter 250g : 65 dh</li>
-  <li id="output">​Barbecue ½ kg : 130 dh</li>
-  <li id="output">​Barbecue 1kg : 250 dh </li>
-</ul>
-<ul id="input">SKEWERS (Brochettes)
-  <li id="output">​Classic : 40 dh</li>
-  <li id="output">​Mixed : 75 dh</li>
-  <li id="output">​Chops : 60 dh </li>
-  <li id="output">​Sausage : 35 dh</li>
-  <li id="output">​Royal : 125 dh</li>
-</ul>
-<ul id="input">​COUSCOUS
-  <li id="output">​With vegetables : 50 dh</li>
-  <li id="output">​With Meat / Chicken : 60 dh</li>
-  <li id="output">​Royal Couscous : 90 dh </li>
-</ul>
-<ul id="input">​SALADS & SIDES
-  <li id="output">​Moroccan salad : 10 dh</li>
-  <li id="output">​Mixed salad : 20 dh</li>
-  <li id="output">​Fries / Greens / Pepper / Marinade : 10 dh </li>
-  <li id="output">​Olives / Eggplant : 05 dh</li>
-  <li id="output">​Harira soup / Dates / Chebakia : 10 dh</li>
-  <li id="output">​Marinated pepper & eggplant : 25 dh</li>
-  <li id="output">​Pastilla / Falafel : 40 dh</li>
-</ul>
-<ul id="input">​PULSES / LEGUMES
-  <li id="output">​Beans / Lentils / Bissara : 15 dh</li>
-</ul>
-<ul id="input">FISH
-  <li id="output">​Classic : 40 dh</li>
-  <li id="output">​Varied / Mixed fish : 70 dh</li>
-  <li id="output">​Squid & shrimp : 50 dh </li>
-<ul id="input">DRINKS
-  <li id="output">​Tea : 02 dh</li>
-  <li id="output">​Soft drinks 33cL : 10 dh</li>
-  <li id="output">​Soft drinks Maxi / 1L : 15 dh </li>
-  <li id="output">​Mineral water : 10 dh</li>
-  <li id="output">​Oulmès (Sparkling water) : 10 dh</li>
-</ul>
+<h1 id="h1">Welcome</h1>
+
+<div id="div">
+    <label for="selection">Pls select your language : </label>
+    <select id="selection">
+        <option value="English" id="English">English</option>
+        <option value="Frensh" id="Frensh">Frensh</option>
+        <option value="Spanish" id="Spanish">Spanish</option>
+        <option value="Arabic" id="Arabic">Arabic</option>
+    </select>
+    <br><br>
+    <button id="submit">Submit</button>
 </div>
-<div id="l2">
-<ul id="input">​POULO (Platos Tradicionales)
-<li class="output">​Cabeza de cordero : 160 dh</li>
-<li class="output">​½ Cabeza de cordero : 80 dh</li>
-<li class="output">​¼ Cabeza de cordero : 40 dh</li>
-<li class="output">​Poulo mixto : 35 dh</li>
-<li class="output">​Poulo especial : 70 dh</li>
-<li class="output">​Lengua : 30 dh</li>
-<li class="output">​Ubre (Ubre de vaca) : 25 dh</li>
-<li class="output">​Sesos : 40 dh</li>
-<li class="output">​Carne ahumada / al vapor : 35 dh</li>
-<li class="output">​Plato de manitas (Fritura) : 60 dh</li>
-<li class="output">​Plato de callos (Tripas) : 35 dh</li>
-</ul>
-<ul id="input">
-  <li id="output"></li>
-  <li id="output"></li>
-  <li id="output"> </li>
-  <li id="output"></li>
-</ul>
-<ul id="input">
-  <li id="output"></li>
-  <li id="output"></li>
-  <li id="output"> </li>
-  <li id="output"></li>
-</ul>
-<ul id="input">
-  <li id="output"></li>
-  <li id="output"></li>
-  <li id="output"> </li>
-</ul>
-<ul id="input">
-  <li id="output"></li>
-  <li id="output"></li>
-  <li id="output"> </li>
-  <li id="output"></li>
-  <li id="output"></li>
-</ul>
-<ul id="input">
-  <li id="output"></li>
-  <li id="output"></li>
-  <li id="output"> </li>
-</ul>
-<ul id="input">
-  <li id="output"></li>
-  <li id="output"></li>
-  <li id="output"> </li>
-  <li id="output"></li>
-  <li id="output"></li>
-  <li id="output"></li>
-  <li id="output"> </li>
-  <li id="output"></li>
-</ul>
-<ul id="input">
-  <li id="output"></li>
-</ul>
-<ul id="input">
-  <li id="output"></li>
-  <li id="output"></li>
-  <li id="output"> </li>
-  <li id="output"></li>
-</ul>
-<ul id="input">
-  <li id="output"></li>
-  <li id="output"></li>
-  <li id="output"> </li>
-</ul>
-<ul id="input">
-  <li id="output"></li>
-  <li id="output"></li>
-  <li id="output"> </li>
-  <li id="output"></li>
-  <li id="output"></li>
-</ul>
+
+<!-- =======================================================
+     ENGLISH SECTION (l1)
+     ======================================================= -->
+<div id="l1" class="menu-lang-section">
+    <h1>Elyasini Menu</h1>
+
+    <h3>POULO (Traditional Dishes)</h3>
+    <ul class="category-list"> 
+        <li class="output">Lamb head : 160 dh</li>
+        <li class="output">½ Lamb head : 80 dh</li>
+        <li class="output">¼ Lamb head : 40 dh</li>
+        <li class="output">Mixed Poulo : 35 dh</li>
+        <li class="output">Special Poulo : 70 dh</li>
+        <li class="output">Tongue : 30 dh</li>
+        <li class="output">Udder (Cow udder) : 25 dh</li>
+        <li class="output">Brains : 40 dh</li>
+        <li class="output">Steamed/Smoked meat : 35 dh</li>
+        <li class="output">Trotters platter (Friture) : 60 dh</li>
+        <li class="output">Tripes platter : 35 dh</li>
+    </ul>
+
+    <h3>TANJIA</h3>
+    <ul class="category-list">
+        <li class="output">Tanjia platter : 35 dh</li>
+        <li class="output">Tanjia ¼ kg : 50 dh</li>
+        <li class="output">Tanjia ½ kg : 100 dh</li>
+        <li class="output">Tanjia 1kg : 200 dh</li>
+    </ul>
+
+    <h3>TAGINE</h3>
+    <ul class="category-list">
+        <li class="output">Chicken with fries : 50 dh</li>
+        <li class="output">Vegetable tagine : 50 dh</li>
+        <li class="output">Meat / Chicken / Kefta tagine : 60 dh</li>
+        <li class="output">Meat with prunes & almonds : 70 dh</li>
+    </ul>
+
+    <h3>BARBECUE</h3>
+    <ul class="category-list">
+        <li class="output">Barbecue platter 250g : 65 dh</li>
+        <li class="output">Barbecue ½ kg : 130 dh</li>
+        <li class="output">Barbecue 1kg : 250 dh</li>
+    </ul>
+
+    <h3>SKEWERS (Brochettes)</h3>
+    <ul class="category-list">
+        <li class="output">Classic : 40 dh</li>
+        <li class="output">Mixed : 75 dh</li>
+        <li class="output">Chops : 60 dh</li>
+        <li class="output">Sausage : 35 dh</li>
+        <li class="output">Royal : 125 dh</li>
+    </ul>
+
+    <h3>COUSCOUS</h3>
+    <ul class="category-list">
+        <li class="output">With vegetables : 50 dh</li>
+        <li class="output">With Meat / Chicken : 60 dh</li>
+        <li class="output">Royal Couscous : 90 dh</li>
+    </ul>
+
+    <h3>SALADS & SIDES</h3>
+    <ul class="category-list">
+        <li class="output">Moroccan salad : 10 dh</li>
+        <li class="output">Mixed salad : 20 dh</li>
+        <li class="output">Fries / Greens / Pepper / Marinade : 10 dh</li>
+        <li class="output">Olives / Eggplant : 05 dh</li>
+        <li class="output">Harira soup / Dates / Chebakia : 10 dh</li>
+        <li class="output">Marinated pepper & eggplant : 25 dh</li>
+        <li class="output">Pastilla / Falafel : 40 dh</li>
+    </ul>
+
+    <h3>PULSES / LEGUMES</h3>
+    <ul class="category-list">
+        <li class="output">Beans / Lentils / Bissara : 15 dh</li>
+    </ul>
+
+    <h3>FISH</h3>
+    <ul class="category-list">
+        <li class="output">Classic : 40 dh</li>
+        <li class="output">Varied / Mixed fish : 70 dh</li>
+        <li class="output">Squid & shrimp : 50 dh</li>
+    </ul>
+
+    <h3>DRINKS</h3>
+    <ul class="category-list">
+        <li class="output">Tea : 02 dh</li>
+        <li class="output">Soft drinks 33cL : 10 dh</li>
+        <li class="output">Soft drinks Maxi / 1L : 15 dh</li>
+        <li class="output">Mineral water : 10 dh</li>
+        <li class="output">Oulmès (Sparkling water) : 10 dh</li>
+    </ul>
 </div>
-<div id="l3">
-<ul id="input"> POULO (Traditional Dishes)
-<li class="output">​Lamb head : 160 dh</li>
-<li class="output">​½ Lamb head : 80 dh</li>
-<li class="output">​¼ Lamb head : 40 dh</li>
-<li class="output">​Mixed Poulo : 35 dh</li>
-<li class="output">​Special Poulo : 70 dh</li>
-<li class="output">​Tongue : 30 dh</li>
-<li class="output">Udder (Cow udder) : 25 dh</li>
-<li class="output">​Brains : 40 dh</li>
-<li class="output">​Steamed/Smoked meat : 35 dh</li>
-<li class="output">​Trotters platter (Friture) : 60 dh</li>
-<li class="output">​Tripes platter : 35 dh</li>
-</ul>
-<ul id="input">
-  <li id="output"></li>
-  <li id="output"></li>
-  <li id="output"> </li>
-  <li id="output"></li>
-</ul>
-<ul id="input">
-  <li id="output"></li>
-  <li id="output"></li>
-  <li id="output"> </li>
-  <li id="output"></li>
-</ul>
-<ul id="input">
-  <li id="output"></li>
-  <li id="output"></li>
-  <li id="output"> </li>
-</ul>
-<ul id="input">
-  <li id="output"></li>
-  <li id="output"></li>
-  <li id="output"> </li>
-  <li id="output"></li>
-  <li id="output"></li>
-</ul>
-<ul id="input">
-  <li id="output"></li>
-  <li id="output"></li>
-  <li id="output"> </li>
-</ul>
-<ul id="input">
-  <li id="output"></li>
-  <li id="output"></li>
-  <li id="output"> </li>
-  <li id="output"></li>
-  <li id="output"></li>
-  <li id="output"></li>
-  <li id="output"> </li>
-  <li id="output"></li>
-</ul>
-<ul id="input">
-  <li id="output"></li>
-</ul>
-<ul id="input">
-  <li id="output"></li>
-  <li id="output"></li>
-  <li id="output"> </li>
-  <li id="output"></li>
-</ul>
-<ul id="input">
-  <li id="output"></li>
-  <li id="output"></li>
-  <li id="output"> </li>
-</ul>
-<ul id="input">
-  <li id="output"></li>
-  <li id="output"></li>
-  <li id="output"> </li>
-  <li id="output"></li>
-  <li id="output"></li>
-</ul>
+
+<!-- =======================================================
+     SPANISH SECTION (l2)
+     ======================================================= -->
+<div id="l2" class="menu-lang-section">
+    <h1>Menú de Elyasini</h1>
+
+    <h3>POULO (Platos Tradicionales)</h3>
+    <ul class="category-list">
+        <li class="output">Cabeza de cordero : 160 dh</li>
+        <li class="output">½ Cabeza de cordero : 80 dh</li>
+        <li class="output">¼ Cabeza de cordero : 40 dh</li>
+        <li class="output">Poulo mixto : 35 dh</li>
+        <li class="output">Poulo especial : 70 dh</li>
+        <li class="output">Lengua : 30 dh</li>
+        <li class="output">Ubre (Ubre de vaca) : 25 dh</li>
+        <li class="output">Sesos : 40 dh</li>
+        <li class="output">Carne ahumada / al vapor : 35 dh</li>
+        <li class="output">Plato de manitas (Fritura) : 60 dh</li>
+        <li class="output">Plato de callos (Tripas) : 35 dh</li>
+    </ul>
+
+    <h3>TANJIA</h3>
+    <ul class="category-list">
+        <li class="output">Plato de Tanjia : 35 dh</li>
+        <li class="output">Tanjia ¼ kg : 50 dh</li>
+        <li class="output">Tanjia ½ kg : 100 dh</li>
+        <li class="output">Tanjia 1kg : 200 dh</li>
+    </ul>
+
+    <h3>TAJÍN</h3>
+    <ul class="category-list">
+        <li class="output">Pollo con patatas fritas : 50 dh</li>
+        <li class="output">Tajín de verduras : 50 dh</li>
+        <li class="output">Tajín de carne / Pollo / Kefta : 60 dh</li>
+        <li class="output">Carne con ciruelas y almendras : 70 dh</li>
+    </ul>
+
+    <h3>BARBACOA (Asado)</h3>
+    <ul class="category-list">
+        <li class="output">Plato de barbacoa 250g : 65 dh</li>
+        <li class="output">Barbacoa ½ kg : 130 dh</li>
+        <li class="output">Barbacoa 1kg : 250 dh</li>
+    </ul>
+
+    <h3>BROCHETAS</h3>
+    <ul class="category-list">
+        <li class="output">Clásica : 40 dh</li>
+        <li class="output">Mixta : 75 dh</li>
+        <li class="output">Chuleta : 60 dh</li>
+        <li class="output">Salchicha : 35 dh</li>
+        <li class="output">Real (Royal) : 125 dh</li>
+    </ul>
+
+    <h3>CUSCÚS</h3>
+    <ul class="category-list">
+        <li class="output">Con verduras : 50 dh</li>
+        <li class="output">Con carne / Pollo : 60 dh</li>
+        <li class="output">Cuscús Real : 90 dh</li>
+    </ul>
+
+    <h3>ENSALADAS Y ENTRANTES</h3>
+    <ul class="category-list">
+        <li class="output">Ensalada marroquí : 10 dh</li>
+        <li class="output">Ensalada mixta : 20 dh</li>
+        <li class="output">Patatas / Verduras / Pimiento / Marinada : 10 dh</li>
+        <li class="output">Aceitunas / Berenjena : 05 dh</li>
+        <li class="output">Sopa Harira / Dátiles / Chebakia : 10 dh</li>
+        <li class="output">Pimiento y berenjena marinados : 25 dh</li>
+        <li class="output">Pastela / Faláfel : 40 dh</li>
+    </ul>
+
+    <h3>LEGUMBRES</h3>
+    <ul class="category-list">
+        <li class="output">Alubias / Lentejas / Bissara : 15 dh</li>
+    </ul>
+
+    <h3>PESCADO</h3>
+    <ul class="category-list">
+        <li class="output">Clásico : 40 dh</li>
+        <li class="output">Variado / Pescado mixto : 70 dh</li>
+        <li class="output">Calamar y camarones : 50 dh</li>
+    </ul>
+
+    <h3>BEBIDAS</h3>
+    <ul class="category-list">
+        <li class="output">Té : 02 dh</li>
+        <li class="output">Refrescos 33cL : 10 dh</li>
+        <li class="output">Refrescos Maxi / 1L : 15 dh</li>
+        <li class="output">Agua mineral : 10 dh</li>
+        <li class="output">Oulmès (Agua con gas) : 10 dh</li>
+    </ul>
 </div>
-<div id="l4">
-<ul id="input"> POULO (Traditional Dishes)
-<li class="output">​Lamb head : 160 dh</li>
-<li class="output">​½ Lamb head : 80 dh</li>
-<li class="output">​¼ Lamb head : 40 dh</li>
-<li class="output">​Mixed Poulo : 35 dh</li>
-<li class="output">​Special Poulo : 70 dh</li>
-<li class="output">​Tongue : 30 dh</li>
-<li class="output">Udder (Cow udder) : 25 dh</li>
-<li class="output">​Brains : 40 dh</li>
-<li class="output">​Steamed/Smoked meat : 35 dh</li>
-<li class="output">​Trotters platter (Friture) : 60 dh</li>
-<li class="output">​Tripes platter : 35 dh</li>
-</ul>
-<ul id="input">
-  <li id="output"></li>
-  <li id="output"></li>
-  <li id="output"> </li>
-  <li id="output"></li>
-</ul>
-<ul id="input">
-  <li id="output"></li>
-  <li id="output"></li>
-  <li id="output"> </li>
-  <li id="output"></li>
-</ul>
-<ul id="input">
-  <li id="output"></li>
-  <li id="output"></li>
-  <li id="output"> </li>
-</ul>
-<ul id="input">
-  <li id="output"></li>
-  <li id="output"></li>
-  <li id="output"> </li>
-  <li id="output"></li>
-  <li id="output"></li>
-</ul>
-<ul id="input">
-  <li id="output"></li>
-  <li id="output"></li>
-  <li id="output"> </li>
-</ul>
-<ul id="input">
-  <li id="output"></li>
-  <li id="output"></li>
-  <li id="output"> </li>
-  <li id="output"></li>
-  <li id="output"></li>
-  <li id="output"></li>
-  <li id="output"> </li>
-  <li id="output"></li>
-</ul>
-<ul id="input">
-  <li id="output"></li>
-</ul>
-<ul id="input">
-  <li id="output"></li>
-  <li id="output"></li>
-  <li id="output"> </li>
-  <li id="output"></li>
-</ul>
-<ul id="input">
-  <li id="output"></li>
-  <li id="output"></li>
-  <li id="output"> </li>
-</ul>
-<ul id="input">
-  <li id="output"></li>
-  <li id="output"></li>
-  <li id="output"> </li>
-  <li id="output"></li>
-  <li id="output"></li>
-</ul>
+
+<!-- =======================================================
+     FRENCH SECTION (l3)
+     ======================================================= -->
+<div id="l3" class="menu-lang-section">
+    <h1>Menu d'Elyasini</h1>
+
+    <h3>POULO (Mets Traditionnels)</h3>
+    <ul class="category-list">
+        <li class="output">Tête d’agneau : 160 dh</li>
+        <li class="output">½ Tête d’agneau : 80 dh</li>
+        <li class="output">¼ Tête d’agneau : 40 dh</li>
+        <li class="output">Paulo varié : 35 dh</li>
+        <li class="output">Paulo spécial : 70 dh</li>
+        <li class="output">Langue : 30 dh</li>
+        <li class="output">Pris (Pis de vache) : 25 dh</li>
+        <li class="output">Cervelle : 40 dh</li>
+        <li class="output">Viande fumée : 35 dh</li>
+        <li class="output">Plats de friture : 60 dh</li>
+        <li class="output">Plat de tripes : 35 dh</li>
+    </ul>
+
+    <h3>TANJIA</h3>
+    <ul class="category-list">
+        <li class="output">Plat de Tanjia : 35 dh</li>
+        <li class="output">Tanjia ¼ kg : 50 dh</li>
+        <li class="output">Tanjia ½ kg : 100 dh</li>
+        <li class="output">Tanjia 1kg : 200 dh</li>
+    </ul>
+
+    <h3>TAGINE</h3>
+    <ul class="category-list">
+        <li class="output">Poulet aux frites : 50 dh</li>
+        <li class="output">Aux légumes : 50 dh</li>
+        <li class="output">À la viande / Poulet / Kefta : 60 dh</li>
+        <li class="output">À la viande pruneaux et amandes : 70 dh</li>
+    </ul>
+
+    <h3>BARBECUE</h3>
+    <ul class="category-list">
+        <li class="output">Plat de barbecue 250g : 65 dh</li>
+        <li class="output">Barbecue ½ kg : 130 dh</li>
+        <li class="output">Barbecue 1kg : 250 dh</li>
+    </ul>
+
+    <h3>BROCHETTES</h3>
+    <ul class="category-list">
+        <li class="output">Classique : 40 dh</li>
+        <li class="output">Mixte : 75 dh</li>
+        <li class="output">Côtelette : 60 dh</li>
+        <li class="output">Saucisse : 35 dh</li>
+        <li class="output">Royale : 125 dh</li>
+    </ul>
+
+    <h3>COUSCOUS</h3>
+    <ul class="category-list">
+        <li class="output">Aux légumes : 50 dh</li>
+        <li class="output">À la viande / Au Poulet : 60 dh</li>
+        <li class="output">Roya (Royal) : 90 dh</li>
+    </ul>
+
+    <h3>SALADE & ENTRÉES</h3>
+    <ul class="category-list">
+        <li class="output">Salade marocaine : 10 dh</li>
+        <li class="output">Salade mixte : 20 dh</li>
+        <li class="output">Frites / Herbes / Poivron / Marinée : 10 dh</li>
+        <li class="output">Olives / Aubergine : 05 dh</li>
+        <li class="output">Harira / Fruits / Chebakia : 10 dh</li>
+        <li class="output">Poivron et aubergine marinés : 25 dh</li>
+        <li class="output">Pastilla / Falafel : 40 dh</li>
+    </ul>
+
+    <h3>LÉGUMINEUSES</h3>
+    <ul class="category-list">
+        <li class="output">Haricots / Lentilles / Bissara : 15 dh</li>
+    </ul>
+
+    <h3>POISSON</h3>
+    <ul class="category-list">
+        <li class="output">Classique : 40 dh</li>
+        <li class="output">Varié : 70 dh</li>
+        <li class="output">Calmar, crevettes : 50 dh</li>
+    </ul>
+
+    <h3>BOISSONS</h3>
+    <ul class="category-list">
+        <li class="output">Thé : 02 dh</li>
+        <li class="output">Boissons gazeuses 33cL : 10 dh</li>
+        <li class="output">Boissons gazeuses Maxi / 1L : 15 dh</li>
+        <li class="output">Eau minérale : 10 dh</li>
+        <li class="output">Oulmès : 10 dh</li>
+    </ul>
 </div>
+
+<!-- =======================================================
+     ARABIC SECTION (l4) - Isolated Bi-Directional Structure
+     ======================================================= -->
+<div id="l4" class="menu-lang-section" dir="rtl">
+   <h1>قائمة الياسيني</h1>
+
+    <h3>بولو (أطباق تقليدية)</h3>
+    <ul class="category-list">
+        <li class="output"><bdi>رأس خروف</bdi> : 160 dh</li>
+        <li class="output"><bdi>نصف رأس خروف</bdi> : 80 dh</li>
+        <li class="output"><bdi>ربع رأس خروف</bdi> : 40 dh</li>
+        <li class="output"><bdi>بولو مشكل</bdi> : 35 dh</li>
+        <li class="output"><bdi>بولو ممتاز</bdi> : 70 dh</li>
+        <li class="output"><bdi>لسان</bdi> : 30 dh</li>
+        <li class="output"><bdi>الضرع (ضرع البقر)</bdi> : 25 dh</li>
+        <li class="output"><bdi>المخ</bdi> : 40 dh</li>
+        <li class="output"><bdi>لحم مبخر / مدخن</bdi> : 35 dh</li>
+        <li class="output"><bdi>طبق كرعين (فريتور)</bdi> : 60 dh</li>
+        <li class="output"><bdi>طبق الكرشة (التقلية)</bdi> : 35 dh</li>
+    </ul>
+
+    <h3>الطنجية</h3>
+    <ul class="category-list">
+        <li class="output"><bdi>طبق طنجية</bdi> : 35 dh</li>
+        <li class="output"><bdi>طنجية ربع كيلو</bdi> : 50 dh</li>
+        <li class="output"><bdi>طنجية نصف كيلو</bdi> : 100 dh</li>
+        <li class="output"><bdi>طنجية 1 كيلو</bdi> : 200 dh</li>
+    </ul>
+
+    <h3>الطاجين</h3>
+    <ul class="category-list">
+        <li class="output"><bdi>دجاج بالفريت</bdi> : 50 dh</li>
+        <li class="output"><bdi>طاجين الخضر</bdi> : 50 dh</li>
+        <li class="output"><bdi>طاجين اللحم / الدجاج / الكفتة</bdi> : 60 dh</li>
+        <li class="output"><bdi>اللحم بالبرقوق واللوز</bdi> : 70 dh</li>
+    </ul>
+
+    <h3>المشويات</h3>
+    <ul class="category-list">
+        <li class="output"><bdi>طبق مشويات 250 غرام</bdi> : 65 dh</li>
+        <li class="output"><bdi>مشويات نصف كيلو</bdi> : 130 dh</li>
+        <li class="output"><bdi>مشويات 1 كيلو</bdi> : 250 dh</li>
+    </ul>
+
+    <h3>القطبان (البروشيت)</h3>
+    <ul class="category-list">
+        <li class="output"><bdi>كلاسيك</bdi> : 40 dh</li>
+        <li class="output"><bdi>مشكل</bdi> : 75 dh</li>
+        <li class="output"><bdi>الضلعة (كوتليت)</bdi> : 60 dh</li>
+        <li class="output"><bdi>النقانق (ميركاز)</bdi> : 35 dh</li>
+        <li class="output"><bdi>رويال (ملكي)</bdi> : 125 dh</li>
+    </ul>
+
+    <h3>الكسكس</h3>
+    <ul class="category-list">
+        <li class="output"><bdi>بالخضار</bdi> : 50 dh</li>
+        <li class="output"><bdi>باللحم / الدجاج</bdi> : 60 dh</li>
+        <li class="output"><bdi>كسكس ملكي</bdi> : 90 dh</li>
+    </ul>
+
+    <h3>السلطات والمقبلات</h3>
+    <ul class="category-list">
+        <li class="output"><bdi>سلطة مغربية</bdi> : 10 dh</li>
+        <li class="output"><bdi>سلطة مشكلة</bdi> : 20 dh</li>
+        <li class="output"><bdi>بطاطس / خضار / فلفل / تتبيلة</bdi> : 10 dh</li>
+        <li class="output"><bdi>زيتون / باذنجان</bdi> : 05 dh</li>
+        <li class="output"><bdi>الحريرة / تمر / شباكية</bdi> : 10 dh</li>
+        <li class="output"><bdi>فلفل وباذنجان متبل</bdi> : 25 dh</li>
+        <li class="output"><bdi>بسطيلة / فلافل</bdi> : 40 dh</li>
+    </ul>
+
+    <h3>القطاني</h3>
+    <ul class="category-list">
+        <li class="output"><bdi>لوبيا / عدس / بيصارة</bdi> : 15 dh</li>
+    </ul>
+
+    <h3>الأسماك</h3>
+    <ul class="category-list">
+        <li class="output"><bdi>كلاسيك</bdi> : 40 dh</li>
+        <li class="output"><bdi>سمك متنوع / مشكل</bdi> : 70 dh</li>
+        <li class="output"><bdi>كالامار وقيمرون</bdi> : 50 dh</li>
+    </ul>
+
+    <h3>المشروبات</h3>
+    <ul class="category-list">
+        <li class="output"><bdi>شاي</bdi> : 02 dh</li>
+        <li class="output"><bdi>مشروبات غازية 33 ملل</bdi> : 10 dh</li>
+        <li class="output"><bdi>مشروبات غازية حجم كبير / 1 لتر</bdi> : 15 dh</li>
+        <li class="output"><bdi>مياه معدنية</bdi> : 10 dh</li>
+        <li class="output"><bdi>والماس (مياه غازية)</bdi> : 10 dh</li>
+    </ul>
+</div>
+
 <script src="projet1.js"></script>
 </body>
 </html>
